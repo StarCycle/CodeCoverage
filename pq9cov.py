@@ -86,14 +86,14 @@ if __name__ == "__main__":
                 with open(file, 'r') as f:
                     string = f.read()
                 # Instrument at every check point
-                string = re.sub(r'if\s*\(.+\)[\s\n]*{', Instrument, string)
-                string = re.sub(r'else if[\s\n]*{', Instrument, string)
-                string = re.sub(r'else[\s\n]*{', Instrument, string)
-                string = re.sub(r'case .+\:', Instrument, string)
-                string = re.sub(r'default\s*:', Instrument, string)
-                string = re.sub(r'for\s*\(.+\)[\s\n]*{', Instrument, string)
-                string = re.sub(r'while\s*\(.+\)[\s\n]*{', Instrument, string)
-                string = re.sub(r'do[\s\n]*{', Instrument, string)
+                string = re.sub(r'\n[\s]*if\s*\(.+\)[\s\n]*{', Instrument, string)
+                string = re.sub(r'\n[\s]*else if[\s\n]*{', Instrument, string)
+                string = re.sub(r'\n[\s]*else[\s\n]*{', Instrument, string)
+                string = re.sub(r'\n[\s]*case .+\:', Instrument, string)
+                string = re.sub(r'\n[\s]*default\s*:', Instrument, string)
+                string = re.sub(r'\n[\s]*for\s*\(.+\)[\s\n]*{', Instrument, string)
+                string = re.sub(r'\n[\s]*while\s*\(.+\)[\s\n]*{', Instrument, string)
+                string = re.sub(r'\n[\s]*do[\s\n]*{', Instrument, string)
                 with open(file, 'w') as f:
                     f.write(string)
     # Give each CodeCount a unique label, start from 0

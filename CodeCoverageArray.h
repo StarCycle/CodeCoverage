@@ -9,6 +9,6 @@
 #define CODECOVERAGEARRAY_H_
 
 extern unsigned char        coverageArray[];
-#define CodeCount(label)    coverageArray[label/8] |= 1<<(7 - label%8)
+#define CodeCount(label)    coverageArray[label/8] |= 1<<(7 - label%8);
 
 #endif /* CODECOVERAGEARRAY_H_ */

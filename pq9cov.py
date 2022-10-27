@@ -87,7 +87,7 @@ if __name__ == "__main__":
                     string = f.read()
                 # Instrument at every check point
                 string = re.sub(r'\n[\s]*if\s*\(.+\)[\s\n]*{', Instrument, string)
-                string = re.sub(r'\n[\s]*else if[\s\n]*{', Instrument, string)
+                string = re.sub(r'\n[\s]*else if\s*\(.+\)[\s\n]*{', Instrument, string)
                 string = re.sub(r'\n[\s]*else[\s\n]*{', Instrument, string)
                 string = re.sub(r'\n[\s]*case .+\:', Instrument, string)
                 string = re.sub(r'\n[\s]*default\s*:', Instrument, string)

@@ -25,6 +25,7 @@ It's a simple tool to measure branch coverage of C/C++ programs.
 ![](./figs/fig3.png)
 ### Citation
 Basic idea of this tool comes from GeCov ([EDI-Systems/G2T01_GeCov: Simple general-purpose embedded system code coverage test tool (github.com)](https://github.com/EDI-Systems/G2T01_GeCov))
+
 If you use the tool, please cite the following work:
 
 *Li, Z. (2022). Use Reinforcement Learning to Generate Testing Commands for Onboard Software of Small Satellites.*

@@ -7,7 +7,7 @@ It's a simple tool to measure branch coverage of C/C++ programs.
  - Since the tool is very simple (~150 lines of code), you can modify it easily.
 
 ### How to use it?
-![输入图片描述](readme_md_files/bdcc09d0-8117-11ed-aac5-797ca6aaefef.jpeg?v=1&type=image)
+![](./figs/fig1.png)
  1. Run `python3 pq9cov.py -i <path1> <path2> ...` to add probes automatically in your source code. \<path1\>,  \<path2\>, ... are the paths of source code files or folders. 
  2.  You can add or delete probes from the source code manually.
  3. Run `python3 pq9cov.py -l <path1> <path2> ...` to add labels to the probes.
@@ -21,8 +21,8 @@ It's a simple tool to measure branch coverage of C/C++ programs.
 ### What does the result look like? 
 
 
-![输入图片描述](readme_md_files/f25c43f0-8116-11ed-aac5-797ca6aaefef.jpeg?v=1&type=image)
-![](readme_md_files/9d5a4de0-8119-11ed-aac5-797ca6aaefef.jpeg?v=1&type=image)
+![](./figs/fig2.png)
+![](./figs/fig3.png)
 ### Citation
 Basic idea of this tool comes from GeCov ([EDI-Systems/G2T01_GeCov: Simple general-purpose embedded system code coverage test tool (github.com)](https://github.com/EDI-Systems/G2T01_GeCov))
 If you use the tool, please cite the following work:
